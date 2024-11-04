@@ -16,7 +16,7 @@ I created an 1 Layer PCB with with embeded MCU (audrino and STM32) to simplely b
 3.  Lazer Printing
 
       I used a Lazer printer other than inkjet printer is because the material lazer printer used is toner powder, which will not react with the chemical mixure we are using for copper etching in step 7. We will be using a layer of letter size plain paper as a base and a piece of glossy paper in the centre of the base. The glossy paper could be magazine or news papers.
-    [image](https://github.com/user-attachments/assets/46620a3a-930c-4842-a82a-f00586516696)
+    ![image](https://github.com/user-attachments/assets/701a5094-3f8f-4a00-8cbd-9fbc787d1fb9)
 6.  Heat/Pressure compressing
 
       After done printing, place the copper board and the paper face to face, then pour enogh acetone on the paper until it covers the board. Compress the paper with a flat soft object for about 2 mins. then clean off the exccess paper by rubbing it in water.
