@@ -1,34 +1,35 @@
 # rawPCB
-A simple Printed Circuit Board that you can make at home safely, ANYTIME!
+A simple Printed Circuit Board that you can make at home safely, anytime!
 
 # Objective
-I created an 1 Layer PCB with with embeded MCU (audrino and STM32) to simplely blink an led.
+Create a single-layer PCB with an embedded MCU (Arduino or STM32) to simply blink an LED.
+Depending on the quality of the printer, you can achieve clearance down to 0.3 mm. For this project, all clearances are around 0.35 mm.  
+In addition, I also made a layer of solder mask, although I did not include the steps here. However, there is a photo showing the solder mask part in the `images` folder.
 
 # Steps
-1.  Schematic Design
+1. **Schematic Design**  
+   For this project, I used EasyEDA for simplicity.  
+   ![Schematic Design](https://github.com/user-attachments/assets/57668c73-78d7-47b1-9df7-f2bc9648e2df)
 
-      For this project I used easyEDA for simplicity
-    ![image](https://github.com/user-attachments/assets/57668c73-78d7-47b1-9df7-f2bc9648e2df)
-2.  PCB Layout
+2. **PCB Layout**  
+   I also used EasyEDA for this part, achieving about 0.3 mm of clearance between drill holes, traces, and the copper fill region.  
+   ![PCB Layout](https://github.com/user-attachments/assets/bf595feb-4c67-402e-91d8-fa52bad33969)
 
-      I also used easyEDA for this part, achving about 0.3 mm of clearnce between drillholes, trace and copper filling region
-    ![image](https://github.com/user-attachments/assets/bf595feb-4c67-402e-91d8-fa52bad33969)
-3.  Lazer Printing
+3. **Laser Printing**  
+   I used a laser printer instead of an inkjet because laser printers use toner powder, which does not react with the chemical mixture we use for copper etching in Step 7. We’ll use a layer of letter-sized plain paper as a base, with a piece of glossy paper (magazine or newspaper) in the center.  
+   ![Laser Printing](https://github.com/user-attachments/assets/701a5094-3f8f-4a00-8cbd-9fbc787d1fb9)
 
-      I used a Lazer printer other than inkjet printer is because the material lazer printer used is toner powder, which will not react with the chemical mixure we are using for copper etching in step 7. We will be using a layer of letter size plain paper as a base and a piece of glossy paper in the centre of the base. The glossy paper could be magazine or news papers.
-    ![image](https://github.com/user-attachments/assets/701a5094-3f8f-4a00-8cbd-9fbc787d1fb9)
-6.  Heat/Pressure compressing
+4. **Heat/Pressure Compressing**  
+   After printing, place the copper board and the printed paper face-to-face. Pour enough acetone on the paper until it covers the board. Press the paper with a flat, soft object for about 2 minutes, then remove the excess paper by rubbing it under water.
 
-      After done printing, place the copper board and the paper face to face, then pour enogh acetone on the paper until it covers the board. Compress the paper with a flat soft object for about 2 mins. then clean off the exccess paper by rubbing it in water.
-7.  Copper etching
+5. **Copper Etching**  
+   **WARNING:** For the following step, please follow WHMIS guidelines.  
+   Use a glass container and mix approximately 1/3 muriatic acid with 2/3 hydrogen peroxide (a highly corrosive chemical). Place the board into the mixture until the PCB layout fully appears, then rinse it carefully with water and dry it.  
+   ![Copper Etching](https://github.com/user-attachments/assets/91c75ff5-950d-4692-93ed-b401c29c1965)
 
-      WARNING: for the follwing step, please follow WHMIS
-    use a glass container and mix about 1/3 of muriatic acid and 2/3 of hydrogen peroxide(this is a highly corrosive chemical). place the board into the mixure untill the PCB layout fully apears. carefully rise it with water can dry it.
-    ![image](https://github.com/user-attachments/assets/91c75ff5-950d-4692-93ed-b401c29c1965)
-8.  Soldering
+6. **Soldering**  
+   Before soldering, ensure you drill all the through-holes with the correct size drill bit. Be careful not to apply too much solder, as it might create shorts that are difficult to remove since we are not using solder masking.  
+   ![Soldering](https://github.com/user-attachments/assets/0b811fb6-ba92-4265-9897-0616097906ac)
 
-      Before soldering, make sure to drill all the through holes with the right size of drill head. when soldering, make sure not to put too much solder as it might crate shorts and be hard to remove since we did not do masking.
-     ![image](https://github.com/user-attachments/assets/0b811fb6-ba92-4265-9897-0616097906ac)
-9.  Debugging
-
-      Debug the board and it will be ready to go! If you are using adurino mcus, most of them requires a boot loading process.
+7. **Debugging**  
+   Debug the board, and it’s ready to go! If you are using Arduino MCUs, note that most of them require a bootloading process.
